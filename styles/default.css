@@ -1,0 +1,45 @@
+/* General */
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
+.header-center {
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    background-color: #523528;
+    margin-bottom: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+#hamburger {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* footer */
+footer {
+    background-color: #523528;
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
