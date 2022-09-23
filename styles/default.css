@@ -1,4 +1,9 @@
 /* General */
+:root {
+    --def-bg: #d28450;
+    --def-hover: aliceblue;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -15,7 +20,7 @@ body {
 }
 
 .navbar, footer {
-    background-color: #9a5d35;
+    background-color: var(--def-bg);
 }
 
 .navbar {
@@ -29,12 +34,30 @@ body {
 }
 
 .nav-link:hover {
-    color: aliceblue;
+    color: var(--def-hover);
 }
 
 #hamburger {
     margin-right: 10px;
     display: inline-block;
+}
+
+/* contact buttons */
+.contact-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 300px;
+    font-size: x-large;
+    background-color: var(--def-bg);
+    border-radius: 3px;
+}
+
+.contact-btn:hover {
+    background-color: rgb(182, 97, 48);
+    color: var(--def-hover);
 }
 
 /* footer */
@@ -45,6 +68,7 @@ body {
     margin-bottom: 5px;
     font-size: small;
 }
+
 
 #loading-overlay {
     opacity:    0.9; 
