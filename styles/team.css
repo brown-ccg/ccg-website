@@ -1,0 +1,30 @@
+/* person tabs on the exec-board page */
+.small-middle-container {
+    margin: auto;
+    width: 90%;
+}
+
+.person-image {
+    height: 300px;
+    object-fit: cover;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.person-image:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.center-span, .person-span {
+    display: table;
+    margin: 0 auto;
+}
+
+.mail {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.linkedin {
+    display: inline-block;
+}

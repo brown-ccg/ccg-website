@@ -3,12 +3,12 @@
 
 <head>
     <title>Collegiate Consulting Group</title>
-    <!-- <base href="C:\Users\wilkj\Desktop\brown CCG website\ccg-website\"> -->
-    <base href="https://brown-ccg.github.io/ccg-website/">
+    <base href="C:\Users\wilkj\Desktop\brown CCG website\ccg-website\">
+    <!-- <base href="https://brown-ccg.github.io/ccg-website/"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/assets/favicon1.ico">
-    
+
     <!-- Required to load all resources as https
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     -->
@@ -23,6 +23,7 @@
 
     <!-- custom javascript -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/gates.js"></script>
 
     <!-- Disable caching for development-->
     <meta http-equiv='cache-control' content='no-cache'>
@@ -30,12 +31,12 @@
     <meta http-equiv='pragma' content='no-cache'>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <!-- ## UNIVERSAL 1.0 ## -->
+<body class="d-flex flex-column min-vh-100" onload="gatesFreeze()">
+    <!-- ## UNIVERSAL 1.1 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="index.html" style="margin-left: 10px;">
-            <img src="images/assets/logo-white.svg" width="200" class="d-inline-block align-top" alt="">
+            <img src="images/assets/logo-black.svg" width="200" class="d-inline-block align-top" alt="">
         </a>
 
         <!-- Hamburger icon. Hides on screens smaller than medium -->
@@ -48,15 +49,36 @@
             <!-- display is none for mobile, starts hidden. Overridden by d-md-flex for medium+ screens -->
             <ul class="navbar-nav d-none d-md-flex" id="dropdown" style="display: none;">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
         </div>
-
     </nav>
 
+    <div id="loading-overlay">
+        <img id="loading-gate" class="mx-auto img-fluid d-block" src="images/misc/vw-gif.gif">
+    </div>
 
-   
+    <div class="container">
+        <h1 class="header-center">About Collegiate Consulting Group</h1>
+        <p> Collegiate Consulting Group fulfills its mission to inspire, train, and educate students about the field of
+            consulting through our external consulting projects, consulting workshops and forums, and through our Spring
+            consulting conference. Our external consulting projects are focused on training and educating students about
+            the field of consulting through real world consulting projects. Each consulting project exposes students to
+            each of the critical phases of the consulting process, namely the scoping phase, problem definition phase,
+            research and analysis phase, and final recommendations and implementation phase.
+        </p>
+        <p>
+            Though our external projects represent the cornerstone of CCG’s educational philosophy of learn through
+            doing, we strive to provide consulting knowledge to the entire Brown community through our consulting
+            workshops and forums. Workshops focus exclusively on teaching industry best practices, consulting
+            frameworks, and professional development, while our forums focus on educating students more broadly on the
+            field of consulting and the different pathways into consulting.
+        </p>
+    </div>
+
+
+
     <!-- ## UNIVERSAL 1.0 ## -->
     <!-- Footer -->
     <footer class="mt-auto">
