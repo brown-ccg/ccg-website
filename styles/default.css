@@ -1,6 +1,7 @@
 /* General */
 :root {
-    --def-bg: #d28450;
+    --def-bg: #9e8f8f;
+    --def-accent: #CC0000;
     --def-hover: aliceblue;
 }
 
@@ -17,6 +18,9 @@ body {
     margin: auto;
     margin-bottom: 15px;
     text-align: center;
+
+    text-decoration: underline;
+    text-decoration-color: var(--def-accent);
 }
 
 /* navbar */
@@ -39,11 +43,18 @@ body {
     display: inline-block;
 }
 
+.navbar-brand:hover {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(1);
+}
+
 /* about us section */
 .company-logo {
     height: auto;
     width: 250px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    display: block;}
 
 /* contact buttons */
 .contact-btn {
