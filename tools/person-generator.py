@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 import csv
 
 
@@ -7,13 +7,16 @@ import csv
 with open('tools\input.csv', 'r') as file:
 
     reader_list = list(csv.reader(file))
+    # skips first row
     for row in reader_list[1:]:
         name = row[1]
         role = row[2]
-        description = row[3]
-        email = row[4]
-        linkedin = row[5]
-        image_name = row[7]
+        class_year = row[3]
+        description = row[4]
+        email = row[5]
+        linkedin = row[6]
+        # image URL - row[7]
+        image_name = row[8]
 
         # Open test.html for reading
         with open('tools\person-template.html') as html_file:
@@ -33,6 +36,12 @@ with open('tools\input.csv', 'r') as file:
                 
             # change image
             soup.find("img")['src'] = "images\\headshots\\" + image_name
+
+            # add comments to beginning and end for delineation
+            soup.insert(0, Comment(f' Team Member - {name} '))
+            soup.append(Comment(f' End - {name} '))        
+        
+
             
             unformatted_tag_list = []
             for i, tag in enumerate(soup.find_all(['h5', 'div'])):
