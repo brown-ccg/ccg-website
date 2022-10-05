@@ -70,7 +70,7 @@ body {
 }
 
 .contact-btn:hover {
-    background-color: rgb(182, 97, 48);
+    background-color: var(--def-accent);
     color: var(--def-hover);
 }
 
