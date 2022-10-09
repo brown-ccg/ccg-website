@@ -32,7 +32,7 @@
     <meta http-equiv='pragma' content='no-cache'>
 </head>
 
-<body class="d-flex flex-column min-vh-100" onload="gatesFreeze()">
+<body class="d-flex flex-column min-vh-100" onload="loadingAnimation()">
     <!-- ## UNIVERSAL 1.2 ## -->
     <!-- A brown horizontal navbar that becomes vertical on small screens with hamburger -->
     <nav class="navbar navbar-expand-md">
@@ -57,7 +57,7 @@
     </nav>
     <!-- End Navbar -->
 
-    <div id="loading-overlay">
+    <div id="loading-overlay" style="visibility: hidden;">
         <img id="loading-gate" class="mx-auto img-fluid d-block" src="images/misc/vw-gif.gif"
             style="margin-top: 100px;">
     </div>
@@ -142,7 +142,7 @@
                             <img alt="..." class="card-img-top person-image" src="images\headshots\gianna-f.JPG" />
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-0">Gianna Finear</h5>
-                                <div class="card-text text-black-50">President - 2023</div>
+                                <div class="card-text text-black-50">President</div>
                                 <p>Gianna is a senior from Newport Beach, CA concentrating in Applied Math-Computer
                                     Science and Economics.
                                     Outside of the classroom, she loves baking, reading, and golfing.</p>
@@ -183,6 +183,36 @@
                         </div>
                     </div>
                     <!-- End - Neel Dhavale -->
+                </div>
+                <!-- End - Row 1-->
+                <!-- Row 2-->
+                <div class="row justify-content-center">
+                    <!-- Team Member - Danna Ofek -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-0 shadow h-100">
+                            <img alt="..." class="card-img-top person-image" src="images\headshots\danna-o.jpg" />
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Danna Ofek</h5>
+                                <div class="card-text text-black-50">Project Leader</div>
+                                <p>Danna is a junior from Lexington, MA concentrating in Business Economics and Public
+                                    Health. She is also a
+                                    member of Brown Women’s Cross Country and Track teams. In her free time, Danna
+                                    enjoys the outdoors and
+                                    doing yoga. </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <span class="person-span">
+                                    <a class="mail" href="mailto:danna_ofek@brown.edu">
+                                        <img height="30" src="images/assets/mail.svg" width="30" />
+                                    </a>
+                                    <a class="linkedin" href="https://www.linkedin.com/in/danna-ofek-12b4aa23b/">
+                                        <img height="30" src="images/assets/linkedin.png" />
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End - Danna Ofek -->
                     <!-- Team Member - Jasper Wang -->
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-0 shadow h-100">
@@ -231,11 +261,6 @@
                         </div>
                     </div>
                     <!-- End - Karan Kashyap -->
-                </div>
-                <!-- End - Row 1-->
-                <!-- Row 2-->
-                <div class="row justify-content-center">
-                    
                 </div>
                 <!-- End - Row 2-->
             </div>
