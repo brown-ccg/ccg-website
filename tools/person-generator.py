@@ -24,7 +24,7 @@ with open('tools\input.csv', 'r') as file:
             
             # change name, role, class text
             soup.find("h5").string.replace_with(name)
-            soup.find("div", {"class": "card-text"}).string.replace_with(role)
+            soup.find("div", {"class": "card-text"}).string.replace_with(role + ", " + class_year)
             soup.find("p").string.replace_with(description)
 
             # change mail and linkedin link

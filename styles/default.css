@@ -1,7 +1,10 @@
 /* General */
 :root {
-    --def-bg: #9e8f8f;
+    /* --def-bg: #9e8f8f;
     --def-accent: #CC0000;
+    */
+    --def-bg: #F80000;
+    --def-accent: #F80000;
     --def-hover: aliceblue;
 }
 
