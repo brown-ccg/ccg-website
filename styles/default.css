@@ -4,7 +4,8 @@
     --def-accent: #CC0000;
     */
     --def-bg: #F80000;
-    --def-accent: #F80000;
+    --def-bg-2: #bebaba;
+    --def-accent: #f80000;
     --def-hover: aliceblue;
 }
 
@@ -67,21 +68,17 @@ body {
     display: inline-block;
 }
 
-/* contact buttons */
-.contact-btn {
+/* join us */
+.card-icon {
+    height: 50px;
+    width: auto;
     margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: inline-block;
-    font-size: x-large;
-    background-color: var(--def-bg);
-    border-radius: 5px;
-}
-
-.contact-btn:hover {
-    background-color: var(--def-accent);
-    color: var(--def-hover);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 5px;
 }
 
 /* footer */
@@ -93,8 +90,23 @@ body {
     font-size: small;
 }
 
+.footer-info {
+    display: inline-block;
+    color: black;
+
+}
+
+.footer-span {
+    display: table;
+    margin: 0 auto;
+}
+
 footer {
     background-color: var(--def-bg);
+}
+
+.upper-footer {
+    background-color: var(--def-bg-2);
 }
 
 #loading-overlay {
