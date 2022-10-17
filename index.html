@@ -25,6 +25,7 @@
     <!-- custom javascript -->
     <script src="scripts/main.js"></script>
     <script src="scripts/gates.js"></script>
+    <script src="scripts/update.js"></script>
 
     <!-- Disable caching for development-->
     <meta http-equiv='cache-control' content='no-cache'>
@@ -279,15 +280,16 @@
         <div id="join">
             <a name="join"></a>
             <h1 class="header-center">Join Collegiate Consulting Group</h1>
-            <p class="text-center">Student consultants at Brown’s Collegiate Consulting Group gain access to real-world consulting experience, professional development opportunities, and a tight-knit campus community.</p>
+            <p class="text-center">Student consultants at Brown’s Collegiate Consulting Group gain access to real-world
+                consulting experience, professional development opportunities, and a tight-knit campus community.</p>
             <p class="text-center">
                 <strong>Application Information</strong>
                 <br>
-                Fall Recruitment: applications for the Fall are currently closed 
+                Fall Recruitment: applications for the Fall are currently closed
                 <br>
                 Spring Recruitment: applications will open at the start of Spring 2023
             </p>
-            <p class="text-center">Please feel free to contact us with any questions at 
+            <p class="text-center">Please feel free to contact us with any questions at
                 <a href="mailto:collegiateconsultinggroup@gmail.com">collegiateconsultinggroup@gmail.com</a>
             </p>
             <div class="container small-middle-container">
@@ -296,12 +298,13 @@
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-0 shadow h-100">
                             <div class="card-header text-white" style="background-color: #F80000;">
-                                <img src="images\assets\mail.svg" class="card-icon"/>
-                            </div>                            
+                                <img src="images\assets\globe.png" class="card-icon" />
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title text-center">Industry Experience</h5>
-                                <p class="card-text">Please feel free to reach out and email us with questions or sponsorship
-                                    inquiries.</p>
+                                <p class="card-text">Working alongside real clients, CCG consultants are responsible for
+                                    conducting research, meeting with clients, and delivering actionable
+                                    recommendations.</p>
                             </div>
                         </div>
                     </div>
@@ -309,12 +312,12 @@
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-0 shadow h-100">
                             <div class="card-header text-white" style="background-color: #F80000;">
-                                <img src="images\assets\mail.svg" class="card-icon"/>
-                            </div>                            
+                                <img src="images\assets\molecular.png" class="card-icon" />
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title text-center">Community</h5>
-                                <p class="card-text">Please feel free to reach out and email us with questions or sponsorship
-                                    inquiries.</p>
+                                <p class="card-text">CCG's selective community is tight-knit and supportive. The diverse
+                                    body of members gain access to both social and recruiting events.</p>
                             </div>
                         </div>
                     </div>
@@ -322,12 +325,11 @@
                     <div class="col-xl-3 col-md-6 mb-4">
                         <div class="card border-0 shadow h-100">
                             <div class="card-header text-white" style="background-color: #F80000;">
-                                <img src="images\assets\mail.svg" class="card-icon"/>
-                            </div>                            
+                                <img src="images\assets\handshake.png" class="card-icon" />
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title text-center">Career Guidance</h5>
-                                <p class="card-text">Please feel free to reach out and email us with questions or sponsorship
-                                    inquiries.</p>
+                                <p class="card-text">With alumni in</p>
                             </div>
                         </div>
                     </div>
@@ -340,7 +342,56 @@
         <div id="clients">
             <a name="clients"></a>
             <h1 class="header-center">Clients</h1>
-            <!-- Carousel -->
+            <!-- Carousel - autoscroll with expansion -->
+            <!-- Carousel wrapper -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!-- carousel-indicators are the translucent tabs at the bottom of the gallery. Have one for each image -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Each carousel-inner is a picture. Can have a caption -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- #NOTE# do we want captions? -->
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                    <div class="carousel-item">
+
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel wrapper -->
 
         </div>
 
@@ -349,6 +400,24 @@
         <div id="events">
             <a name="events"></a>
             <h1 class="header-center">Upcoming Events</h1>
+            <div class="row events">
+                <div class="list-group" id="events-list">
+                    <!-- Empty - events added dynamically from events.txt -->
+                </div>
+            </div>
+
+            <!-- Invisible iframe, loads announcements file-->
+            <iframe id="frmFile" src="scripts/events.txt" onload="updateEvents();" style="display: none;"></iframe>
+
+            <!-- Empty Template for announcement -->
+            <a href="javascript:;" data-type="template"
+                class="list-group-item list-group-item-action flex-column align-items-start" style="display: none;">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Title</h5>
+                    <small>Date</small>
+                </div>
+                <p class="mb-1">Description</p>
+            </a>
         </div>
 
     </div>
@@ -360,13 +429,17 @@
     <footer class="mt-auto">
         <div class="upper-footer">
             <div class="container">
-                <p class="footer-info text-center">Brown Collegiate Consulting Group is a student-run organization that provides a wide range of consulting services, including research, analysis, stakeholder engagement, and implementation.
-                    Contact us at <a href="mailto:collegiateconsultinggroup@gmail.com">collegiateconsultinggroup@gmail.com</a> with any and all inquiries.
+                <p class="footer-info text-center">Brown Collegiate Consulting Group is a student-run organization that
+                    provides a wide range of consulting services, including research, analysis, stakeholder engagement,
+                    and implementation.
+                    Contact us at <a
+                        href="mailto:collegiateconsultinggroup@gmail.com">collegiateconsultinggroup@gmail.com</a> with
+                    any and all inquiries.
                 </p>
             </div>
         </div>
         <div class="container">
-            
+
             <p class="footer-text">Copyright © Collegiate Consulting Club 2022. All rights reserved. </p>
         </div>
     </footer>
