@@ -14,3 +14,11 @@ function toggleMenu() {
         navList.style.display = "none";
     }
 }
+
+function hoverMail(element) {
+    element.setAttribute('src', 'images/assets/mail-open.svg');
+}
+  
+function unhoverMail(element) {
+    element.setAttribute('src', 'images/assets/mail.svg');
+}
