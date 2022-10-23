@@ -38,11 +38,6 @@ body {
     height: 5px;
 }
 
-.nav-link {
-    color: black;
-    font-size: large;
-}
-
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -53,7 +48,13 @@ body {
     text-decoration: none;
     font-size: 17px;
     border-bottom: 3px solid transparent;
-  }
+}
+
+.nav-link {
+    color: black;
+    font-size: large;
+    border: 3px solid transparent;
+}
 
 .nav-link:hover {
     color: var(--def-accent);
@@ -66,11 +67,11 @@ body {
 }
 
 .navbar-brand:hover {
-    -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(1);
+    -webkit-filter: invert(17%) sepia(82%) saturate(7484%) hue-rotate(358deg) brightness(93%) contrast(110%);
 }
 
-/* about us section */
+/* about us section - company logos for OTHER companies */
 .company-logo {
     height: auto;
     width: 250px;
