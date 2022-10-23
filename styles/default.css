@@ -39,8 +39,25 @@ body {
     font-size: large;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+
 .nav-link:hover {
     color: var(--def-hover);
+    border-bottom: 3px solid var(--def-hover);
+}
+
+.nav-link.active {
+    border-bottom: 3px solid var(--def-hover);
 }
 
 #hamburger {
@@ -125,5 +142,9 @@ footer {
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
+}
 
+
+.carousel-image {
+    height: 300px;
 }
