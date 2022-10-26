@@ -28,3 +28,7 @@
 .linkedin {
     display: inline-block;
 }
+
+.person-text {
+    text-align: left;
+}
