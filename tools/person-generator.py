@@ -30,6 +30,8 @@ with open('tools\input.csv', 'r') as file:
             # change mail and linkedin link
             soup.find("a", {"class": "mail"})['href'] = "mailto:" + email
             if (linkedin != ""):
+                if not "https://" in linkedin:
+                    linkedin = "https://" + linkedin
                 soup.find("a", {"class": "linkedin"})['href'] = linkedin
             else:
                 soup.find("a", {"class": "linkedin"}).decompose()
