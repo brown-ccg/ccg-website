@@ -1,3 +1,7 @@
+function main() {
+    loadingAnimation();
+}
+
 function toggleMenu() {
 
     var navList = document.getElementById("dropdown");
