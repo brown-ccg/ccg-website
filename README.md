@@ -12,7 +12,7 @@ such as:
 - Consultant photos and bios
 - Events and announcements
 - Recruiting information
-<br>
+
 Please refer to the private technical documentation (owned by CCG president)
 
 ### Technical contacts:
