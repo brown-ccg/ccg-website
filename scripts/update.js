@@ -8,18 +8,22 @@ function updateEvents() {
 
     for (var i = 0; i < arr.length; i++) {
 
-        let re = /[^|]+/g
-        let parsedText = arr[i].match(re)
-        let eventTitle = parsedText[0];
-        let eventDate = parsedText[1];
-        let eventDescription = parsedText[2];
-
-        var tempNode = document.querySelector("a[data-type='template']").cloneNode(true);
-        tempNode.querySelector("h5").innerText = eventTitle;
-        tempNode.querySelector("small").innerText = eventDate;
-        tempNode.querySelector("p").innerText = eventDescription;
-        tempNode.style.display = "block";
-        docFrag.appendChild(tempNode);
+        try {
+            let re = /[^|]+/g
+            let parsedText = arr[i].match(re)
+            let eventTitle = parsedText[0];
+            let eventDate = parsedText[1];
+            let eventDescription = parsedText[2];
+    
+            var tempNode = document.querySelector("a[data-type='template']").cloneNode(true);
+            tempNode.querySelector("h5").innerText = eventTitle;
+            tempNode.querySelector("small").innerText = eventDate;
+            tempNode.querySelector("p").innerText = eventDescription;
+            tempNode.style.display = "block";
+            docFrag.appendChild(tempNode);   
+        } catch (error) {
+            console.error("Issue parsing a line of the events document. Check the formatting of the document.");
+        }
     }
     
     annList.appendChild(docFrag);
