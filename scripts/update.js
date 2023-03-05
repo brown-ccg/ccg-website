@@ -14,11 +14,15 @@ function updateEvents() {
             let eventTitle = parsedText[0];
             let eventDate = parsedText[1];
             let eventDescription = parsedText[2];
-    
+            let eventLink = "javascript:;";
+            if (parsedText[3] !== undefined) {
+                eventLink = parsedText[3]
+            }
             var tempNode = document.querySelector("a[data-type='template']").cloneNode(true);
             tempNode.querySelector("h5").innerText = eventTitle;
             tempNode.querySelector("small").innerText = eventDate;
             tempNode.querySelector("p").innerText = eventDescription;
+            tempNode.href = eventLink;
             tempNode.style.display = "block";
             docFrag.appendChild(tempNode);   
         } catch (error) {
