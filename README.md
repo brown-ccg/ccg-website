@@ -7,7 +7,7 @@ To view these files locally and visualize edits, simply git clone and open index
 ## Maintenance and Future Development:
 This website was built by hand, making use of the Bootstrap CSS library. As such, 
 while it may not be as no-code friendly as a static site generator like Wix or Weebly, 
-low levels of technical exxpertise are required to update it. For comprehensive details on updating things
+low levels of technical expertise are required to update it. For comprehensive details on updating things
 such as:
 - Consultant photos and bios
 - Events and announcements
