@@ -6,7 +6,8 @@ function updateEvents() {
     var annList = document.getElementById("events-list");
     var docFrag = document.createDocumentFragment();
 
-    for (var i = 0; i < arr.length; i++) {
+    // skip first event (example event syntax)
+    for (var i = 1; i < arr.length; i++) {
 
         try {
             let re = /[^|]+/g
