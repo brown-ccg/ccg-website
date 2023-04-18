@@ -58,3 +58,5 @@ with open('tools\input.csv', 'r') as file:
         with open('tools\\generated\\' + name + '.html', mode='w') as new_html_file:
             new_html_file.write(pretty_markup)
 
+    print("Personnel cards generated successfully into the \generated directory")
+
