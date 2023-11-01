@@ -1,4 +1,46 @@
 
+// president JSON
+const prezCardData = [{
+    "timestamp": "2022/10/24 10:19:12 PM AST",
+    "name": "Karan Kashyap",
+    "role": "Co-President",
+    "classYear": 2025,
+    "about": "Karan is a sophomore from New Delhi, India, studying Computer Science and Behavioral Decision Sciences. Outside of the classroom, he loves solving puzzles, playing tennis, and building software.",
+    "email": "karan_kashyap@brown.edu",
+    "linkedin": "https://www.linkedin.com/in/karan-kashyap04/",
+    "fullImageLink": "",
+    "imageName": "karan-k.jpg"
+},
+{
+    "timestamp": "2022/09/26 2:19:35 PM AST",
+    "name": "Benjamin Moshes",
+    "role": "Co-President",
+    "classYear": 2025,
+    "about": "Benjamin is a junior from Newton, MA concentrating in Applied Math and Economics. He is also a member of the Finance Team on the Brown Daily Herald. In his free time, Benjamin loves watching NFL football and making scallion pancakes.",
+    "email": "benjamin_moshes@brown.edu",
+    "linkedin": "https://www.linkedin.com/in/benjamin-moshes-39a1a820b/",
+    "fullImageLink": "https://drive.google.com/u/0/open?usp=forms_web&id=1HNRCeFLGb62bMwv5zyMWMykBCP90CPXP",
+    "imageName": "benjamin-m.jpg"
+},
+{
+    "timestamp": "2022/10/09 2:05:00 PM AST",
+    "name": "Danna Ofek",
+    "role": "Co-President",
+    "classYear": 2024,
+    "about": "Danna is a senior from Lexington, MA concentrating in Business Economics and Public Health. She is also a member of Brown Women’s Cross Country and Track teams. In her free time, Danna enjoys the outdoors and doing yoga.",
+    "email": "danna_ofek@brown.edu",
+    "linkedin": "https://www.linkedin.com/in/danna-ofek-12b4aa23b/",
+    "fullImageLink": "https://drive.google.com/u/0/open?usp=forms_web&id=1Duh0rdOWxepx9Woi37NLFRSTk5DZry-S",
+    "imageName": "danna-o.jpg"
+}]
+
+// leadership JSON (do not include presidents in this list)
+const leadershipCardData = []
+
+// consultant JSON
+const consultantCardData = []
+
+// builds HTML cards for each person given relevant strings
 function createCard(name, role, classYear, about, email, linkedin, imageName) {
     const template = document.createElement("template");
     template.innerHTML = `
@@ -28,6 +70,7 @@ function createCard(name, role, classYear, about, email, linkedin, imageName) {
     return template.content.firstElementChild;
 }
 
+// builds an empty row for the cards to be placed in
 function createRow() {
     const template = document.createElement("template");
     template.innerHTML = `
@@ -38,44 +81,11 @@ function createRow() {
     return template.content.firstElementChild;
 }
 
-// Example data for each card.
-const dummyCardData = [
-    {
-        "timestamp": "2022/10/24 10:19:12 PM AST",
-        "name": "Karan Kashyap",
-        "role": "Co-President",
-        "classYear": 2025,
-        "about": "Karan is a sophomore from New Delhi, India, studying Computer Science and Behavioral Decision Sciences. Outside of the classroom, he loves solving puzzles, playing tennis, and building software.",
-        "email": "karan_kashyap@brown.edu",
-        "linkedin": "https://www.linkedin.com/in/karan-kashyap04/",
-        "fullImageLink": "",
-        "imageName": "karan-k.jpg"
-    },
-    {
-        "timestamp": "2022/09/26 2:19:35 PM AST",
-        "name": "Benjamin Moshes",
-        "role": "Co-President",
-        "classYear": 2025,
-        "about": "Benjamin is a junior from Newton, MA concentrating in Applied Math and Economics. He is also a member of the Finance Team on the Brown Daily Herald. In his free time, Benjamin loves watching NFL football and making scallion pancakes.",
-        "email": "benjamin_moshes@brown.edu",
-        "linkedin": "https://www.linkedin.com/in/benjamin-moshes-39a1a820b/",
-        "fullImageLink": "https://drive.google.com/u/0/open?usp=forms_web&id=1HNRCeFLGb62bMwv5zyMWMykBCP90CPXP",
-        "imageName": "benjamin-m.jpg"
-    },
-    {
-        "timestamp": "2022/10/09 2:05:00 PM AST",
-        "name": "Danna Ofek",
-        "role": "Co-President",
-        "classYear": 2024,
-        "about": "Danna is a senior from Lexington, MA concentrating in Business Economics and Public Health. She is also a member of Brown Women’s Cross Country and Track teams. In her free time, Danna enjoys the outdoors and doing yoga.",
-        "email": "danna_ofek@brown.edu",
-        "linkedin": "https://www.linkedin.com/in/danna-ofek-12b4aa23b/",
-        "fullImageLink": "https://drive.google.com/u/0/open?usp=forms_web&id=1Duh0rdOWxepx9Woi37NLFRSTk5DZry-S",
-        "imageName": "danna-o.jpg"
-    }
-]
-
-
+/*
+    Builds rows of 3 cards for each person in the given JSON
+    @param currentRow: the row to be added to (HTMLElement)
+    @param cardData: the JSON of people to be added
+*/
 function generateCards(currentRow, cardData) {
 
     let tempRow = createRow();
@@ -104,11 +114,14 @@ const r1 = document.getElementById("card-dock-prez");
 const r2 = document.getElementById("card-dock-leadership");
 const r3 = document.getElementById("card-dock-consultants");
 if (r1){
-    generateCards(r1, dummyCardData);
+    // generate cards for presidents in the card-doc-prez div
+    generateCards(r1, prezCardData);
 }
 if (r2){
-    generateCards(r2, dummyCardData);
+    // generate cards for leadership in the card-doc-leadership div
+    generateCards(r2, leadershipCardData);
 }
 if (r3){
-    generateCards(r3, dummyCardData);
+    // generate cards for consultants in the card-doc-consultants div
+    generateCards(r3, consultantCardData);
 }
