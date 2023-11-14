@@ -119,16 +119,6 @@ const consultantCardData = [
       "linkedin": "https://www.linkedin.com/in/krish-shah-932a19240/",
       "imageName": "krish-s.jpg"
     },
-    // {
-    //   "timestamp": "2023/10/22 9:11:41 PM EST",
-    //   "name": "Adrien Durantel",
-    //   "role": "Consultant",
-    //   "classYear": 2027,
-    //   "about": "Adrien is a freshman from London, UK. He plans on concentrating in APMA-CS. In his free time he enjoys swimming and just enjoying the small things in life.",
-    //   "email": "adrien_durantel@brown.edu",
-    //   "linkedin": "",
-    //   "imageName": "adrien-d.jpg"
-    // },
     {
       "timestamp": "2023/10/22 9:23:20 PM EST",
       "name": "Noah Hallward-Rough",
@@ -298,7 +288,17 @@ const consultantCardData = [
       "email": "zubin_oommen@brown.edu",
       "linkedin": "",
       "imageName": "zubin-o.jpg"
-    }
+    },
+    {
+        "timestamp": "2023/10/22 9:11:41 PM EST",
+        "name": "Adrien Durantel",
+        "role": "Consultant",
+        "classYear": 2027,
+        "about": "Adrien is a freshman from London, UK. He plans on concentrating in APMA-CS. In his free time he enjoys swimming and just enjoying the small things in life.",
+        "email": "adrien_durantel@brown.edu",
+        "linkedin": "",
+        "imageName": "adrien-d.jpg"
+      },
   ]
 
 // builds HTML cards for each person given relevant strings
