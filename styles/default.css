@@ -159,3 +159,14 @@ footer {
 a {
     color: var(--def-accent);
 }
+
+.flyer-img {
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    padding: 3px;
+    border: #f80000 3px solid;
+    border-radius: 10px;
+}
