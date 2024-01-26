@@ -170,16 +170,6 @@ const consultantCardData = [
       "imageName": "cole-g.jpg"
     },
     {
-      "timestamp": "2023/10/23 10:27:30 AM EST",
-      "name": "Noemi Elliott",
-      "role": "Internal Development",
-      "classYear": 2026,
-      "about": "Noemi is a sophomore from Singapore studying Applied Math - Economics and East Asian Studies. Outside of the classroom, Noemi enjoys reading 19th century British literature and dissecting classic Hollywood cinema.",
-      "email": "Noemi_elliott@brown.edu",
-      "linkedin": "",
-      "imageName": "noemi-e.jpg"
-    },
-    {
       "timestamp": "2023/10/23 1:13:16 PM EST",
       "name": "Elisa Carroll",
       "role": "Consultant",
