@@ -1,2 +1,1 @@
 EVENT TITLE|EVENT DATE|EVENT DESCRIPTION (note, this event is not visible)|EVENT LINK (must include http or https, this field optional)
-CCG Spring applications open|Spring 2024|Apply now!
