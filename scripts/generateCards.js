@@ -16,7 +16,7 @@ const prezCardData = [
       "name": "Benjamin Moshes",
       "role": "President",
       "classYear": 2025,
-      "about": "Benjamin is a junior from Newton, Massachusetts studying Applied Math and Economics. Outside of CCG, he serves as the General Manager of the Brown Daily Herald, works as an education economics research assistant, and volunteers teaching Ukrainian refugees English. Next summer, he is looking forward to joining the Boston Consulting Group as a summer intern.",
+      "about": "Benjamin is a junior from Newton, Massachusetts studying Applied Math and Economics. Outside of CCG, he serves as the General Manager of the Brown Daily Herald and works as an education economics research assistant. Next summer, he is looking forward to joining the Boston Consulting Group as a summer intern.",
       "email": "benjaminm3030@gmail.com",
       "linkedin": "https://www.linkedin.com/in/benjamin-moshes-39a1a820b/",
       "imageName": "benjamin-m.jpg"
@@ -295,16 +295,23 @@ const consultantCardData = [
 function createCard(name, role, classYear, about, email, linkedin, imageName) {
     const template = document.createElement("template");
     template.innerHTML = `
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow h-100">
-                <img src="./images/headshots/${imageName}" class="card-img-top person-image" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">${name}</h5>
-                    <div class="card-text text-black-50">${role}, ${classYear}</div>
-                    <p class="person-text">${about}</p>
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="flip-card ">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="image-overlay">
+                        <img src="./images/headshots/${imageName}" class="card-img-top person-image">
+                        <div class="overlay-text">
+                            <h5 class="underlined">${name}</h5>
+                            <p>${role}, ${classYear}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-footer bg-transparent">
-                    <span class="person-span">
+                <div class="flip-card-back">
+                    <h5 class="underlined" style="margin: 0px;">${name}</h5>
+                    <p style="margin: 0px;">${role}, ${classYear}</p>
+                    <p>${about}</p>
+                    <span class="person-footer">
                         <a class="mail" href=${email}>
                             <img src="images/assets/mail.svg" width="30" height="30" onmouseover="hoverMail(this);" onmouseout="unhoverMail(this);">
                         </a>
@@ -315,6 +322,7 @@ function createCard(name, role, classYear, about, email, linkedin, imageName) {
                 </div>
             </div>
         </div>
+    </div>
       `;
     // TODO: remove linkedin if none provided
 

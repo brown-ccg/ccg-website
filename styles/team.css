@@ -4,20 +4,28 @@
     width: 90%;
 }
 
+/* General card formatting */
+
 .person-image {
-    height: 300px;
+    height: 350px;
     object-fit: cover;
-    transition: transform .2s; /* Animation */
     margin: 0 auto;
+    border-radius: 20px; 
 }
 
-.person-image:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.center-span, .person-span {
+.center-span,
+.person-footer {
     display: table;
     margin: 0 auto;
+}
+
+.person-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
 }
 
 .mail {
@@ -29,6 +37,72 @@
     display: inline-block;
 }
 
-.person-text {
-    text-align: left;
+
+
+/* Flip card CSS */
+
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px; 
+
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgb(224, 225, 227);
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+}
+
+.overlay-text h5, .overlay-text p {
+    margin: 0;
 }
