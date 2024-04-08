@@ -90,14 +90,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.hero-text {
+.hero-base {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     border: #f80000 3px solid;
 }
+
 
 /* about us section - company logos for OTHER companies */
 .company-logo {
