@@ -1,5 +1,5 @@
 function main() {
-    loadingAnimation();
+    // loadingAnimation();  // uncomment to show loading animation - gates
 }
 
 function toggleMenu() {
