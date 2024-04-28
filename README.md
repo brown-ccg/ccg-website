@@ -13,7 +13,7 @@ such as:
 - Events and announcements
 - Recruiting information
 
-Please refer to the private technical documentation (owned by CCG president)
+Please refer to the private technical documentation ([found here, must open with a Brown email](https://docs.google.com/document/d/1NrMB1LzCuYm1zzDdxtxBiu-eiUeqhIW2UR6Qp6HaC0c/edit?usp=sharing))
 
 ### Technical contacts:
 Please see private technical documentation for contact details
