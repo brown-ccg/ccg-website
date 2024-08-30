@@ -4,7 +4,7 @@ const prezCardData = [
     {
         "timestamp": "2023/10/22 9:21:47 PM EST",
         "name": "PengCheng Zhu",
-        "role": "Project Leader",
+        "role": "Co-President (Projects)",
         "classYear": 2026,
         "about": "PengCheng is a junior from Irvine, CA, concentrating in Business Economics and Chemistry. Outside of the classroom, he enjoys composing and going to concerts.",
         "email": "pengcheng_zhu@brown.edu",
@@ -14,7 +14,7 @@ const prezCardData = [
     {
         "timestamp": "2023/11/01 9:08:01 AM EST",
         "name": "Sujith Pakala",
-        "role": "Consultant",
+        "role": "Co-President (Projects)",
         "classYear": 2026,
         "about": "Sujith is a junior from San Jose, CA studying Computer Science-Economics and Biology. He is also a member of Van Wickle Ventures and Brown Badmaash and enjoys playing pikeball on the main green in his free time.",
         "email": "sujith_pakala@brown.edu",
@@ -24,7 +24,7 @@ const prezCardData = [
     {
         "timestamp": "2023/10/23 9:43:53 AM EST",
         "name": "Cole Griscom",
-        "role": "Internal Development",
+        "role": "Co-Present (Internal Development)",
         "classYear": 2025,
         "about": "Cole is a senior from outside of Philadelphia, PA concentrating in Business Economics and Public Health. On campus, he is also involved with Connect for Health and the Healthcare Investment Group. In his free time, Cole sings for the University Chorus and enjoys crocheting.",
         "email": "cole_griscom@brown.edu",
