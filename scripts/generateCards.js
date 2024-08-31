@@ -24,7 +24,7 @@ const prezCardData = [
     {
         "timestamp": "2023/10/23 9:43:53 AM EST",
         "name": "Cole Griscom",
-        "role": "Co-Present (Internal Development)",
+        "role": "Co-President (Internal Development)",
         "classYear": 2025,
         "about": "Cole is a senior from outside of Philadelphia, PA concentrating in Business Economics and Public Health. On campus, he is also involved with Connect for Health and the Healthcare Investment Group. In his free time, Cole sings for the University Chorus and enjoys crocheting.",
         "email": "cole_griscom@brown.edu",
