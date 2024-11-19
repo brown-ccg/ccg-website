@@ -4,6 +4,8 @@
     width: 90%;
 }
 
+
+
 /* General card formatting */
 
 .person-image {
@@ -85,6 +87,7 @@
     background-color: rgb(224, 225, 227);
     transform: rotateY(180deg);
     padding: 10px;
+    font-size: 15.25px;
 }
 
 .image-overlay {
