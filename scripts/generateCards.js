@@ -367,7 +367,7 @@ const consultantCardData = [
         "about": "Gia is a sophomore from Tenafly, NJ studying Economics & Literary Arts. She is a member of the Bruno Finance Society and Delta Gamma Sorority. In her free time, Gia enjoys playing the violin and writing poetry!",
         "email": "gia_shin@brown.edu",
         "linkedin": "https://www.linkedin.com/in/gia-shin/",
-        "imageName": "gia-h.jpg"
+        "imageName": "gia-s.jpg"
     },
 
     {
