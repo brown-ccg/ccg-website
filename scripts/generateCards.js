@@ -90,7 +90,7 @@ const leadershipCardData = [
         "name": "Zubin Oommen",
         "role": "Project Leader",
         "classYear": 2027,
-        "about": "Zubin is a sophomore from Seattle, MA, studying Computer Science and Economics. He is also a member of the Brown Poker Club and Brown Salsa Club. Outside of school, Zubin loves to watch football and play intramural sports.",
+        "about": "Zubin is a sophomore from Seattle, WA, studying Computer Science and Economics. He is also a member of the Brown Poker Club and Brown Salsa Club. Outside of school, Zubin loves to watch football and play intramural sports.",
         "email": "zubin_oommen@brown.edu",
         "linkedin": "https://www.linkedin.com/in/zubin-oommen-3a4552290/",
         "imageName": "zubin-o.jpg"
