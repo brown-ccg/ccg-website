@@ -276,7 +276,7 @@ const consultantCardData = [
         "name": "Shruthika Padhy",
         "role": "Consultant",
         "classYear": 2028,
-        "about": "Shruthika is a freshman from Wellesley, MA. She is also a member of the South Asian Students Association, Women in Business, and PLME Senate. In her free time, Shruthika enjoys playing club field hockey and trying new foods.",
+        "about": "Shruthika is a freshman from Cherry Hill, NJ. She is also Social Chair of the South Asian Students Association and a member of Women in Business and Brown Club Field Hockey. In her free time, Shruthika enjoys watching sports, cafe-hopping, trying new foods and watching movies.",
         "email": "shruthika_padhy@brown.edu",
         "linkedin": "https://www.linkedin.com/in/spadhy/",
         "imageName": "shruthika-p.jpg"
